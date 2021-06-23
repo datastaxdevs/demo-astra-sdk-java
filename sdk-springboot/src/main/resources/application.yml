@@ -1,0 +1,40 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  messages:
+    basename: i18n/messages
+  thymeleaf:
+    mode: XHTML
+    prefix: classpath:views/view-
+    suffix: .html
+  jackson:
+    default-property-inclusion: non-null   
+  output:
+    ansi:
+      enabled: DETECT    
+ 
+logging:
+  file: logs/application-debug.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    root: WARN
+    com.datastax.yasa: INFO
+    
+    
+    
+    
+
+astra:
+  database-id: 0fd948c4-5f1b-4521-adb5-01de81df6503
+ 
+  client-id: tvfdeICPGDjneZxhXcDmIYAH
+  client-secret: bmeQ,vw0.nmAcMD4F2h7BALBRA7zGsnL,LWGXI,hItW9PpDjYWlG.E,q43+5-+A+v5dEN_FgkilSWKzB,pn_Xk6LPAau7Q4t-uzfH,GhOt,NU-j0_9-iGpMrwKGPyq+J
+  application-token: AstraCS:tvfdeICPGDjneZxhXcDmIYAH:6bd43ac6de0ba4b1e71a332305c2309cf993d67ac9092a96f55df151725366f8
+  cloud-region: us-east-1
+ 
+  keyspace: springboot_doc
+
+        
